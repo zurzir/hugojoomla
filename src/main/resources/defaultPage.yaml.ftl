@@ -4,8 +4,10 @@ title: "${joomlaData.title}"
 description: "${joomlaData.metadesc}"
 tags: [ ${tags} ]
 type: "post"
-date: "${joomlaData.modifiedDateAsText}"
+createdDate: "${joomlaData.createdDateAsText}"
+date: "${joomlaData.publishUpAsText}"
 author:  "${joomlaData.author}"
+authorAlias:  "${joomlaData.createdByAlias}"
 <#if joomlaData.introImage.isImagePresent()>
 banner: "${joomlaData.introImage.url}"
 </#if>
